@@ -1,108 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Blog Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blogging Website - Sign Up</title>
+    <link rel="stylesheet" href="./style2.css">
 </head>
+<body>
+  <div class="form-container">
+    <p class="title">Create an Account</p>
+    <form class="form" id="signup-form">
+      <input type="text" class="input" id="username" placeholder="Username" required>
+      <input type="email" class="input" id="email" placeholder="Email" required>
+      <input type="password" class="input" id="password" placeholder="Password" required>
+      <button type="submit" class="form-btn">Sign Up</button>
+    </form>
+    <p class="sign-up-label">
+      Already have an account? <span class="sign-up-link" onclick="redirectToLogin()">Log in</span>
+    </p>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+
+</style>
 
 <body>
-    <header>
-        <div id="container">
-            <div id="cont-head">
-                <h1>Basit Blog</h1>
-            </div>
-            <div>
-                <ul id="ul-div">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <div class="form-container">
+    <p class="title">Create an Account</p>
+    <form class="form">
+      <input type="text" class="input" placeholder="Enter your Name" id="name">
+      <input type="email" class="input" placeholder="Enter your Email"  id="email">
+      <input type="password" class="input" placeholder="Create Strong Password" id="password">
+      <button class="form-btn"  id="button" onclick="signUp()">Sign Up</button>
+    </form>
+    <p class="sign-up-label">
+      Already have an account?<span class="sign-up-link"><a href="./login.html">Log in</a></span>
+    </p>
+  </div>
 
-    <main>
-        <section id="home">
-            <div class="container">
+  <script src="signup.js"></script>
 
-                <h2>Latest Posts</h2>
-
-                <article>
-                    <div>
-                        <img src="./images/goal.avif" class="article-img" alt="Blog Post Image">
-                    </div>
-                    <div>
-                        <h3 class="article-heading">When you set a goal and How you achieved it</h3>
-                        <p class="article-para">A common interview question for many positions is, “Give me an example
-                            of
-                            when you set a goal and how you achieved it.” This question aims to understand your
-                            goal-setting and achievement process. Here’s a structured approach to answer this question
-                            effectively.
-                        </p>
-                        <a href="#" class="article-readMore">Read More</a>
-                    </div>
-                </article>
-                <br><br><br>
-                <article id="center-article">
-                    <div>
-                        <img src="./images/decision_regretted.jpg" id="article-img" alt="Blog Post Image">
-                    </div>
-                    <div>
-                        <h3 id="article-heading">A decision that you’ve regretted and How you overcame it</h3><br>
-                        <p id="article-para"><b>Understanding the Question</b> <br>
-                            Interviewers ask this question, “Tell Me About a Decision That You’ve Regretted and How You
-                            Overcame It”, to gauge your self-awareness, ability to reflect on your actions, and your
-                            problem-solving skills.
-                        </p>
-                        <a href="#" id="article-readMore">Read More</a>
-                    </div>
-                </article>
-                <br><br><br>
-                <article>
-                    <div>
-                        <img src="./images/bussines_fail.jpeg" class="article-img" alt="Blog Post Image">
-                    </div>
-                    <div>
-                        <h3 class="article-heading">About Business Failures and Why the Happened</h3>
-                        <p class="article-para">Business failures can occur due to a variety of reasons, and
-                            understanding
-                            these factors is crucial for entrepreneurs and business owners to mitigate risks and
-                            increase their chances of success. While each business failure is unique, several common
-                            causes can be identified.
-                        </p>
-                        <a href="#" class="article-readMore">Read More</a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <img src="./images/basit4.jpg" alt="Profile Image" class="profile-img">
-                <p>Hi, I'm Abdul Basit. Welcome to my personal blog where I share my thoughts, experiences, and more.
-                    Stay tuned for updates!</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <p>You can reach me at <a href="mailto:hafizabdulbasit225@gmail.com"
-                        target="_blank">hafizabdulbasit225@gmail.com</a>.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Basit Blog. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-
-</html>
+</body> -->

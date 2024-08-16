@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+ /* Reset some default browser styles */
 body,
 h1,
 h2,
@@ -10,7 +10,7 @@ ul {
 }
 
 /* Basic styles */
-body {
+ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f4f4f4;
@@ -29,8 +29,11 @@ body {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-}
+} */
 
+h1{
+    color: #007BFF;
+}
 
 /* Header styles */
 header {
