@@ -29,6 +29,7 @@ ul {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    
 } 
 
 h1{
@@ -122,7 +123,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700;
+    color: #b2d3d8;
 } 
 
 @media (max-width: 700px) {
@@ -144,8 +145,10 @@ nav ul li a:hover {
 
     .hamburger-menu {
         display: block;
-
         z-index: 2;
+        position: relative;
+        right: 28px;
+        font-size: 44px;
     }
 
     .nav {
@@ -212,11 +215,12 @@ div ul li a:hover {
 /* Main section styles */
 main {
     padding: 20px 0;
+    background: #deecee;
 }
 
 section {
     padding: 20px;
-    background: #fff;
+    background: #b2d3d8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -265,10 +269,11 @@ article {
 }
 
 #basitLogo{
-    width: 182px;
-    height: 168px;
-    /* position: absolute;
-    bottom: 493px; */
+    width: 164px;
+    height: 156px;
+    position: relative;
+    bottom: 13px;
+    right: 30px;
 }
 
 #center-article {
@@ -414,8 +419,9 @@ footer {
     #basitLogo{
         width: 172px;
         height: 158px;
-        /* position: absolute;
-        bottom: 380px; */
+        position: relative;
+        bottom: 10px;
+        right: 2px;
     }
 
     #article-heading {
@@ -474,6 +480,9 @@ footer {
         height: 148px;
         padding: 0px;
         margin: 0px;
+        position: relative;
+        bottom: 7px;
+        left: 16px;
     }
 
     #center-article{
