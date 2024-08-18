@@ -267,8 +267,8 @@ article {
 #basitLogo{
     width: 182px;
     height: 168px;
-    position: absolute;
-    bottom: 493px;
+    /* position: absolute;
+    bottom: 493px; */
 }
 
 #center-article {
@@ -348,6 +348,15 @@ footer {
         text-align: center;
     }
 
+    header {
+        /* color: white;
+        padding: .5rem 0; */
+        background: #161A42;;
+        color: #fff;
+        /* padding: 9px 0px 0px 0px; */
+        height: 138px;
+    }
+
     div ul li {
         display: block;
         margin: 10px 0;
@@ -403,10 +412,10 @@ footer {
     }
 
     #basitLogo{
-        width: 182px;
-        height: 168px;
-        position: absolute;
-        bottom: 380px;
+        width: 172px;
+        height: 158px;
+        /* position: absolute;
+        bottom: 380px; */
     }
 
     #article-heading {
@@ -445,7 +454,7 @@ footer {
     }
 
     header {
-        
+        height: 127px;
     }
 
     article h3 {
@@ -461,10 +470,10 @@ footer {
     }
 
     #basitLogo{
-        width: 176px;
-        height: 164px;
-        position: absolute;
-        bottom: 388px;
+        width: 152px;
+        height: 148px;
+        padding: 0px;
+        margin: 0px;
     }
 
     #center-article{
@@ -510,7 +519,7 @@ footer {
         flex-direction: column; */
         display: flex;
         justify-content: space-between;
-        padding: 0px;
+        /* padding: 0px; */
         margin: 0px;
     }
    
@@ -529,7 +538,7 @@ footer {
 
 
     #cont-head {
-        text-align: center;
+        height: 125px;
     }
 
 }
