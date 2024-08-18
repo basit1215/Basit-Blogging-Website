@@ -63,7 +63,7 @@ header {
     padding: .5rem 0; */
     background: #161A42;;
     color: #fff;
-    padding: 9px 0px 0px 0px;
+    /* padding: 9px 0px 0px 0px; */
 }
 
 .nav-container {
@@ -265,8 +265,10 @@ article {
 }
 
 #basitLogo{
-    width: 180px;
-    height: 120px;
+    width: 182px;
+    height: 168px;
+    position: absolute;
+    bottom: 493px;
 }
 
 #center-article {
@@ -308,7 +310,9 @@ article {
     margin: 35px 0px;
 }
 
-#cont-head {}
+#cont-head {
+    height: 120px;
+}
 
 article a:hover {
     color: #FFD700;
@@ -398,6 +402,13 @@ footer {
         margin-top: 40px;
     }
 
+    #basitLogo{
+        width: 182px;
+        height: 168px;
+        position: absolute;
+        bottom: 380px;
+    }
+
     #article-heading {
         margin-top: 10px;
         font-size: 1.75em;
@@ -421,7 +432,10 @@ footer {
     }
 
 
-    #cont-head {}
+    #cont-head {
+        height: 125px;
+    }
+    
 
 }
 
@@ -447,8 +461,10 @@ footer {
     }
 
     #basitLogo{
-        width: 140px;
-        height: 92px;
+        width: 176px;
+        height: 164px;
+        position: absolute;
+        bottom: 388px;
     }
 
     #center-article{
@@ -475,6 +491,11 @@ footer {
         height: 270px;
     }
 
+    #cont-head {
+        height: 118px;
+    }
+    
+
     #article-heading {
         margin: 0px;
     }
@@ -492,7 +513,7 @@ footer {
         padding: 0px;
         margin: 0px;
     }
-    }
+   
 
     #article-readMore {
         margin-left: 0px;
