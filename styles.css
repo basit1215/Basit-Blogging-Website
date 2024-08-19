@@ -247,6 +247,24 @@ article {
     border-radius: 8px;
 }
 
+.readBtn{
+    background-color: #161A42;
+    /* color: #b2d3d8; */
+    border-color: black;
+    width: 108px;
+    height: 37px;
+    border: 1px thin;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0px 0px 40px -32px #161A42;
+    -moz-box-shadow: inset 0px 0px 40px -32px #161A42;
+    box-shadow: inset 0px 0px 40px -32px #161A42;
+    border-width: 1px;
+}
+
+.center-btn{
+    margin-left: 65px;
+}
+
 .article-heading {
     margin-top: 10px;
     font-size: 1.75em;
@@ -260,12 +278,14 @@ article {
 }
 
 .article-readMore {
-    color: #161A42;;
+    color: #161A42;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     transition: color 0.3s ease;
+    /* margin-left: 65px; */
+    color: #b2d3d8;
 }
 
 #basitLogo{
@@ -301,13 +321,14 @@ article {
 }
 
 #article-readMore {
-    color: #161A42;;
+    color: #161A42;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     margin-top: 10px;
     transition: color 0.3s ease;
-    margin-left: 65px;
+    /* margin-left: 65px; */
+    color: #b2d3d8;
 }
 
 
@@ -319,8 +340,16 @@ article {
     height: 120px;
 }
 
-article a:hover {
-    color: #FFD700;
+.readBtn:hover {
+    background-color:#b2d3d8;
+    color: #161A42;
+    border-color: #161A42;
+}
+
+ #article-readMore:hover {
+    background-color:#b2d3d8;
+    color: #161A42;
+    border-color: #161A42;
 }
 
 #about-para{
@@ -420,7 +449,7 @@ footer {
         width: 172px;
         height: 158px;
         position: relative;
-        bottom: 10px;
+        bottom: 17px;
         right: 2px;
     }
 
@@ -435,14 +464,17 @@ footer {
     }
 
     #article-readMore {
-        margin-left: 28px;
+        /* margin-left: 28px; */
     }
 
+    .center-btn {
+        margin-left: 28px;
+    }
 
     #ul-div {
         display: flex;
         justify-content: space-between;
-        width: 360px;
+        width: 421px;
         margin-right: 20px;
     }
 
