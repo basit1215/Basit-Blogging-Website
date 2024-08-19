@@ -76,6 +76,13 @@ header {
     margin: 0 auto;
 }
 
+#basitLogo{
+    width: 164px;
+    height: 156px;
+    position: relative;
+    bottom: 13px;
+    right: 30px;
+}
 
 .nav-container .logo {
     /* font-size: 2rem; 
@@ -288,13 +295,7 @@ article {
     color: #b2d3d8;
 }
 
-#basitLogo{
-    width: 164px;
-    height: 156px;
-    position: relative;
-    bottom: 13px;
-    right: 30px;
-}
+
 
 #center-article {
     /* display: flex;

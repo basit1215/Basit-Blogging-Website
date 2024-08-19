@@ -1,6 +1,149 @@
-/* img{
+ /* Reset some default browser styles */
+ body,
+ h1,
+ h2,
+ h3,
+ p,
+ ul,
+ ol {
+         margin: 0;
+         padding: 0;
+ }
 
-        width: 200px;
-        height: 130px;
-   
-} */
+ body {
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #deecee;
+ }
+
+h1{
+        font-family: ui-rounded;
+}
+
+ .card {
+        margin: 100px 195px 0px 195px;
+    border: 2px solid black;
+    border-radius: 26px;
+ }
+
+ .card-img-top {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border: 1px solid black;
+    }
+
+ .card-body {
+        padding: 2rem 3rem 0rem 3rem;
+        background-color: #b2d3d8;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+ }
+
+ .container {
+         width: 90%;
+         margin: 0 auto;
+         max-width: 1200px;
+ }
+
+ #container {
+         width: 90%;
+         margin: 0 auto;
+         max-width: 1200px;
+         display: flex;
+         justify-content: space-between;
+
+ }
+
+ ul {
+         list-style: none;
+ }
+
+ a {
+         text-decoration: none;
+         color: inherit;
+ }
+
+ header {
+         /* color: white;
+        padding: .5rem 0; */
+         background: #161A42;
+         ;
+         color: #fff;
+         /* padding: 9px 0px 0px 0px; */
+ }
+
+ .nav-container {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         width: 90%;
+         margin: 0 auto;
+ }
+
+
+ .nav-container .logo {
+         /* font-size: 2rem; 
+        font-weight: bold;   */
+ }
+
+ .nav {
+         display: flex;
+ }
+
+ .nav--ul__one {
+         margin: 0 auto;
+ }
+
+ .nav-container,
+ .nav--ul__one,
+ .nav--ul__two {
+         display: flex;
+         gap: 1.6rem;
+         font-size: 1.2rem;
+ }
+
+ .hamburger-menu {
+         display: none;
+         /*Hidden by default for larger screens */
+         cursor: pointer;
+ }
+
+
+ nav ul {
+         list-style: none;
+         padding: 0;
+         margin-top: 10px;
+ }
+
+ nav ul li {
+         display: inline;
+         margin: 0 35px;
+ }
+
+ nav ul li a {
+         color: #fff;
+         text-decoration: none;
+         font-weight: bold;
+         transition: color 0.3s ease;
+         font-size: 25px;
+ }
+
+ nav ul li a:hover {
+         color: #b2d3d8;
+ }
+
+ #basitLogo{
+        width: 164px;
+        height: 156px;
+        position: relative;
+        bottom: 13px;
+        right: 30px;
+    }
+
+    #ul-div {
+        margin: 35px 0px;
+    }
+    
+    #cont-head {
+        height: 120px;
+    }
