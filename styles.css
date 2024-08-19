@@ -641,3 +641,31 @@ footer {
     }
 
 }
+
+
+@media (max-width: 320px) {
+
+    #contact-link-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 12px;
+    }
+    
+   
+
+}
+
+
+@media (max-width: 375px) {
+
+    #contact-link-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 9px;
+    }
+    
+   
+
+}
