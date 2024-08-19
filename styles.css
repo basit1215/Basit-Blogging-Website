@@ -364,6 +364,40 @@ article {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 2px solid #161A42;
+}
+
+#contact-link-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.all-contact-links{
+    border-radius: 50%;
+    background-color: #161A42;
+    width: 51px;
+    height: 51px;
+    border: 2px solid #161A42;
+    color: #deecee;
+    border-color: black;
+}
+
+.all-contact-links a{
+    position: relative;
+    top: 8px;
+    left: 11px;
+}
+
+.app-link:hover{
+ color: #161A42;
+}
+
+.all-contact-links:hover{
+    background-color:  #deecee ;
+    color: #161A42;
+    border: 2px solid #161A42;
 }
 
 /* Footer styles */
@@ -482,7 +516,19 @@ footer {
     #cont-head {
         height: 125px;
     }
+
+    /* #contact-link-container{
+
+    }
     
+    .all-contact-links{
+    
+    }
+    
+    .all-contact-links a{
+        
+    }
+     */
 
 }
 
@@ -575,6 +621,18 @@ footer {
         width: 100%;
         justify-content: space-evenly;
     }
+
+    /* #contact-link-container{
+
+    }
+    
+    .all-contact-links{
+    
+    }
+    
+    .all-contact-links a{
+        
+    } */
 
 
 
