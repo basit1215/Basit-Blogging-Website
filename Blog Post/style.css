@@ -15,27 +15,111 @@
          background-color: #deecee;
  }
 
-h1{
-        font-family: ui-rounded;
-}
+ h1 {
+         font-family: ui-rounded;
+         margin-bottom: 20px;
+         text-decoration: 3px solid;
+         text-decoration-line: underline;
+         font-size: 42px;
+         font-weight: bold;
+         color: #760000;
+ }
 
- .card {
-        margin: 100px 195px 0px 195px;
-    border: 2px solid black;
-    border-radius: 26px;
+ .card-title {
+         margin-bottom: 20px;
  }
 
  .card-img-top {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border: 1px solid black;
-    }
+         border-top-left-radius: 25px;
+         border-top-right-radius: 25px;
+         border: 1px solid black;
+         height: 430px;
+ }
+
+ p {
+         margin-bottom: 20px;
+         font-size: 20px;
+ }
+
+ h2 {
+         margin-bottom: 20px;
+         font-size: 40px;
+         color: #000a69;
+         font-weight: bold;
+ }
+
+ li {
+         font-size: 19px;
+         font-family: arial;
+         margin-bottom: 6px;
+ }
+
+ b {
+         font-weight: bolder;
+         font-size: 20px;
+ }
+
+ h3 {
+         font-weight: 600;
+         text-decoration-line: underline;
+         color: #760000;
+ }
+
+ #article-readMore {
+         color: #161A42;
+         text-decoration: none;
+         font-weight: bold;
+         display: inline-block;
+         margin-top: 10px;
+         transition: color 0.3s ease;
+         /* margin-left: 65px; */
+         color: #b2d3d8;
+ }
+
+ .readBtn {
+         background-color: #161A42;
+         /* color: #b2d3d8; */
+         border-color: black;
+         width: 135px;
+         height: 37px;
+         border: 1px thin;
+         border-radius: 8px;
+         -webkit-box-shadow: inset 0px 0px 40px -32px #161A42;
+         -moz-box-shadow: inset 0px 0px 40px -32px #161A42;
+         box-shadow: inset 0px 0px 40px -32px #161A42;
+         border-width: 1px;
+ }
+
+ /* .readBtn:hover {
+        background-color:#b2d3d8;
+        color: #161A42;
+        border-color: #161A42;
+    } */
+
+ #article-readMore:hover {
+         background-color: #b2d3d8;
+         color: #161A42;
+         border-color: #161A42;
+ }
+
+ .card {
+         margin: 100px 275px 0px 275px;
+         border: 2px solid black;
+         border-radius: 26px;
+         width: 50rem;
+ }
+
+ .card-img-top {
+         border-top-left-radius: 25px;
+         border-top-right-radius: 25px;
+         border: 1px solid black;
+ }
 
  .card-body {
-        padding: 2rem 3rem 0rem 3rem;
-        background-color: #b2d3d8;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+         padding: 2rem 3rem 2rem 3rem;
+         background-color: #b2d3d8;
+         border-bottom-left-radius: 25px;
+         border-bottom-right-radius: 25px;
  }
 
  .container {
@@ -132,18 +216,269 @@ h1{
          color: #b2d3d8;
  }
 
- #basitLogo{
-        width: 164px;
-        height: 156px;
-        position: relative;
-        bottom: 13px;
-        right: 30px;
-    }
+ #basitLogo {
+         width: 164px;
+         height: 156px;
+         position: relative;
+         bottom: 13px;
+         right: 30px;
+ }
 
-    #ul-div {
-        margin: 35px 0px;
-    }
-    
-    #cont-head {
-        height: 120px;
-    }
+ #ul-div {
+         margin: 35px 0px;
+ }
+
+ #cont-head {
+         height: 120px;
+ }
+
+
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+         div ul {
+                 /* text-align: center; */
+         }
+
+         header {
+                 background: #161A42;
+                 color: #fff;
+                 /* padding: 9px 0px 0px 0px; */
+                 height: 138px;
+         }
+
+         div ul li {
+                 display: block;
+                 margin: 10px 0;
+         }
+
+         .container {
+                 width: 95%;
+         }
+
+         #container {
+                 width: 95%;
+                 /* display: flex; */
+                 /* flex-direction: row; */
+
+         }
+
+         #basitLogo {
+                 width: 172px;
+                 height: 158px;
+                 position: relative;
+                 bottom: 17px;
+                 right: 2px;
+         }
+
+         #ul-div {
+                 /* display: flex; */
+                 /* justify-content: space-between; */
+                 /* width: 421px; */
+                 /* margin-right: 20px;*/
+
+         }
+
+
+         #cont-head {
+                 height: 125px;
+         }
+
+         .card {
+                 margin: 100px 32px 0px 32px;
+                 border: 2px solid black;
+                 border-radius: 18px;
+                 width: 44rem;
+         }
+
+         /* .card-img-top {
+                 border-top-left-radius: 16px;
+                 border-top-right-radius: 16px;
+                 border: 1px solid black;
+                 height: 421px;
+         } */
+
+         .card-body {
+                 padding: 2rem;
+                 background-color: #b2d3d8;
+                 border-bottom-left-radius: 16px;
+                 border-bottom-right-radius: 16px;
+         }
+
+         h1 {
+                 font-family: ui-rounded;
+                 margin-bottom: 20px;
+                 text-decoration: 3px solid;
+                 text-decoration-line: underline;
+                 font-size: 42px;
+                 font-weight: bold;
+                 color: #760000;
+         }
+
+         .card-title {
+                 /* margin-bottom: 20px; */
+         }
+
+         .card-img-top {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border: 1px solid black;
+                height: 430px;
+         }
+
+         p {
+                 /* margin-bottom: 20px; */
+                 font-size: 19px;
+         }
+
+         h2 {
+                 /* margin-bottom: 20px; */
+                 font-size: 35px;
+                 /* color: #000a69; */
+                 /* font-weight: bold; */
+         }
+
+         li {
+                font-size: 18px;
+                /* font-family: arial; */
+                /* margin-bottom: 6px; */
+         }
+
+         b {
+                  /* font-weight: bolder; */
+        font-size: 19px;
+         }
+
+         h3 {
+                        /* font-weight: 600; */
+        /* text-decoration-line: underline; */
+        /* color: #760000; */
+         }
+
+ }
+
+
+
+
+ @media (max-width: 480px) {
+        div ul {
+                /* text-align: center; */
+        }
+
+        header {
+                background: #161A42; */
+                /* color: #fff; */
+                /* padding: 9px 0px 0px 0px; */
+                height: 125px;
+        }
+
+        div ul li {
+                display: block;
+                /* margin: 10px 0; */
+        }
+
+        .container {
+                width: 95%;
+        }
+
+        #container {
+              /*  width: 95%; */
+                /* display: flex; */
+                /* flex-direction: row; */
+
+        }
+
+        #basitLogo {
+                     /* width: 172px; */
+        /* height: 158px; */
+        /* position: relative; */
+        /* bottom: 17px; */
+        /* right: 2px; */
+        }
+
+        #ul-div {
+                display: flex;
+                margin-right: 0px;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+
+        #cont-head {
+                height: 133px;
+            }
+
+        .card {
+                margin: 85px 16px 0px 16px;
+                border: 2px solid black;
+                border-radius: 18px;
+                width: 28rem;
+        }
+
+        /* .card-img-top {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border: 1px solid black;
+                height: 421px;
+        } */
+
+        .card-body {
+                padding: 2rem;
+                background-color: #b2d3d8;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+        }
+
+        h1 {
+                font-family: ui-rounded;
+                margin-bottom: 20px;
+                text-decoration: 3px solid;
+                text-decoration-line: underline;
+                font-size: 42px;
+                font-weight: bold;
+                color: #760000;
+        }
+
+        .card-title {
+                       /* margin-bottom: 20px; */
+        font-size: 35px;
+        }
+
+        .card-img-top {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border: 1px solid black;
+                height: 321px;
+        
+        }
+
+        p {
+                      /* margin-bottom: 20px; */
+        font-size: 17px;
+        }
+
+        h2 {
+                /* margin-bottom: 20px; */
+                font-size: 31px;
+                /* color: #000a69; */
+                /* font-weight: bold; */
+        }
+
+        li {
+                font-size: 16px;
+                /* font-family: arial; */
+                /* margin-bottom: 6px; */
+        }
+
+        b {
+                         /* font-weight: bolder; */
+        font-size: 17px;
+        }
+
+        h3 {
+                       /* font-weight: 600; */
+       /* text-decoration-line: underline; */
+       /* color: #760000; */
+        }
+
+}
