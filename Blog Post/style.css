@@ -15,6 +15,13 @@
          background-color: #deecee;
  }
 
+ html,
+ body {
+         max-width: 100%;
+         overflow-x: hidden;
+ }
+
+
  h1 {
          font-family: ui-rounded;
          margin-bottom: 20px;
@@ -220,6 +227,13 @@
  /* Responsive Design */
  @media (max-width: 768px) {
 
+         html,
+         body {
+                 max-width: 100%;
+                 overflow-x: hidden;
+         }
+
+
          header {
                  background: #161A42;
                  color: #fff;
@@ -303,6 +317,13 @@
 
 
  @media (max-width: 480px) {
+
+         html,
+         body {
+                 max-width: 100%;
+                 overflow-x: hidden;
+         }
+
 
          header {
                  background: #161A42;
@@ -388,56 +409,176 @@
 
 
 
- @media (max-width: 320px) {
-         header {
-                 background: #161A42;
-                 height: 125px;
-         }
 
-
-         .card {
-                 margin: 85px 16px 0px 16px;
-                 border: 2px solid black;
-                 border-radius: 18px;
-                 width: 28rem;
-         }
-
- }
 
 
 
 
  @media (max-width: 375px) {
 
+         html,
+         body {
+                 max-width: 100%;
+                 overflow-x: hidden;
+         }
+
+
          header {
-                 background: #161A42;
-                 height: 125px;
-                 width: 465px;
+                 background: #161A42 !important;
+                 height: 125px !important;
+                 width: 390px !important;
          }
 
          .card {
-                 margin: 85px 7px 0px 7px;
-                 border: 2px solid black;
-                 border-radius: 18px;
-                 width: 28rem;
+                margin: 85px 3px 0px 3px !important;
+                border: 2px solid black !important;
+                border-radius: 18px !important;
+                width: 23rem !important;
+         }
+
+         #cont-head {
+                 height: 108px !important;
+         }
+
+         #basitLogo {
+                 width: 152px !important;
+                 height: 139px !important;
+                 position: relative !important;
+                 bottom: 17px !important;
+                 right: 2px !important;
+         }
+
+         .card-img-top {
+                 height: 278px !important;
+         }
+
+         nav ul li a {
+                 font-size: 22px;
          }
 
  }
 
+ @media (max-width: 320px) {
+
+         html,
+         body {
+                 max-width: 100%;
+                 overflow-x: hidden;
+         }
+
+
+         header {
+                 background: #161A42 !important;
+                 height: 125px  !important;
+                 width: 337px !important;
+
+         }
+
+
+         .card {
+                margin: 65px 0px 0px 0px !important;
+                border: 2px solid black !important;
+                border-radius: 18px !important;
+                width: 20rem !important;
+         }
+
+         #cont-head {
+                height: 95px !important;
+        }
+
+        #basitLogo {
+                width: 142px !important;
+                height: 129px !important;
+                position: relative !important;
+                bottom: 19px !important;
+                right: 14px !important;
+        }
+
+        .card-img-top {
+                height: 250px !important;
+
+        }
+
+        nav ul li a {
+                font-size: 18px;
+        }
+
+ }
 
  @media (max-width: 425px) {
 
+         html,
+         body {
+                 max-width: 100%;
+                 overflow-x: hidden;
+         }
+
+
          header {
                  background: #161A42;
-                 height: 125px;
-                 width: 465px;
+                 height: 130px;
+                 width: 426px;
          }
 
          .card {
-                 margin: 85px 7px 0px 7px;
+                 margin: 85px 4px 0px 4px;
                  border: 2px solid black;
                  border-radius: 18px;
-                 width: 28rem;
+                 width: 26rem;
+         }
+
+         #cont-head {
+                 height: 120px;
+         }
+
+         #basitLogo {
+                 width: 162px;
+                 height: 148px;
+                 position: relative;
+                 bottom: 17px;
+                 right: 2px;
+         }
+
+         .card-img-top {
+                 height: 303px;
          }
 
  }
+
+ /* @media (max-width: 1024px) {
+
+        header {
+                background: #161A42;
+                color: #fff;
+                height: 125px;
+        }
+
+        .card {
+                margin: 100px 160px 0px 160px;
+                border: 2px solid black;
+                border-radius: 29px;
+                width: 44rem;
+        }
+
+} */
+
+ /* @media (max-width: 1440px) {
+
+        header {
+                background: #161A42;
+                color: #fff;
+                height: 135px;
+        }
+
+        .card {
+                margin: 100px 195px 0px 195px;
+                border: 2px solid black;
+                border-radius: 29px;
+                width: 60rem;
+        }
+
+        .card-img-top {
+                height: 555px;
+            }
+
+} */
