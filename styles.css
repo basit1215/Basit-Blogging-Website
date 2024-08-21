@@ -29,15 +29,8 @@
      margin: 0;
  }
 
+
  /* Nav Bar Styles */
-
-
-
-
-
-
-
-
  * {
      margin: 0;
      padding: 0;
@@ -47,7 +40,6 @@
 
  body {
      background: #012540;
-     /* color: #fff; */
  }
 
  header {
@@ -63,13 +55,6 @@
  }
 
  nav {
-     /* display: flex; */
-     /* height: 125px; */
-     /* width: 100%; */
-     /* align-items: center; */
-     /* justify-content: space-between; */
-     /* padding: 0px 50px 0 70px; */
-     /* flex-wrap: wrap; */
      width: 90%;
      margin: 0 auto;
      max-width: 1200px;
@@ -78,30 +63,17 @@
      height: 125px;
  }
 
- nav .logo {
-     /* color: #fff;
-     font-size: 35px;
-     font-weight: 600; */
- }
-
  nav ul {
      display: flex;
-     /* flex-wrap: wrap; */
      list-style: none;
-     /* width: 435px; */
-     /* position: relative; */
      top: 48px;
      margin: 35px 0px;
      gap: 1.6rem;
-     /* font-size: 1.2rem; */
  }
 
  nav ul li {
      margin: 0 5px;
-     /* display: block; */
      padding: .5rem 1rem;
-     /* color: #0d6efd; */
-     /* text-decoration: none; */
      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
  }
 
@@ -203,12 +175,6 @@
          text-align: center;
      }
 
-     header {
-         /* background: #161A42; */
-         /* color: #fff; */
-         /* height: 138px; */
-     }
-
      div ul li {
          display: block;
          margin: 10px 0;
@@ -232,8 +198,6 @@
      }
 
      #basitLogo {
-         /* width: 172px; */
-         /* height: 158px; */
          position: relative;
          bottom: 6px;
          right: 10px;
@@ -253,7 +217,7 @@
 
  }
 
- @media (max-width: 425px) {
+ @media (max-width: 480px) {
 
      header {
          height: 115px !important;
@@ -322,160 +286,6 @@
 
 
  }
-
-
-
-
- /* #container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    
-} 
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-header {
-    background: #161A42;;
-    color: #fff;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 90%;
-    margin: 0 auto;
-}
-
-#basitLogo{
-    width: 164px;
-    height: 156px;
-    position: relative;
-    bottom: 13px;
-    right: 30px;
-}
-
-.nav {
-    display: flex;
-}
-
-.nav--ul__one {
-    margin: 0 auto;
-}
-
-.nav-container, .nav--ul__one,
-.nav--ul__two {
-    display: flex;
-    gap: 1.6rem;
-    font-size: 1.2rem;
-}
-
-.hamburger-menu {
-     display: none; 
-    cursor: pointer;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 35px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 25px;
-}
-
-nav ul li a:hover {
-    color: #b2d3d8;
-} 
-
-#ul-div {
-    margin: 35px 0px;
-}
-
-#cont-head {
-    height: 120px;
-}
-
-
-@media (max-width: 700px) {
-
-    html,
-    body {
-            max-width: 100%;
-            overflow-x: hidden;
-    }
-
-
-    .nav-container .logo {
-        font-size: 1.2rem;
-        z-index: 2;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .nav--ul__one,
-    .nav--ul__two {
-        flex-direction: column;
-        gap: .6rem;
-    }
-
-    .hamburger-menu {
-        display: block;
-        z-index: 2;
-        position: relative;
-        right: 28px;
-        font-size: 44px;
-    }
-
-    .nav {
-        position: absolute;
-        top: 0;
-        right: -100%;
-        bottom: 0;
-        width: 100%;
-
-        padding-top: 6rem;
-
-        align-items: center;
-        text-align: center;
-        background-color: #4D4DDB;
-        color: white;
-
-        transition: 0.15s ease-in-out;
-    }
-
-    .nav.active {
-        right: 0;
-    }
-
-} */
-
-
 
  /* Main section styles */
  main {
@@ -648,7 +458,20 @@ nav ul li a:hover {
      position: relative;
      top: 8px;
      left: 11px;
+     color: #161A42 !important;
+     background-color: #deecee;
+     position: relative;
+     top: 8px;
+     left: 11px;
+     color: #deecee;
  }
+
+
+
+ .all-contact-links label:hover{
+    
+ }
+ 
 
  .app-link:hover {
      color: #161A42;
@@ -656,7 +479,7 @@ nav ul li a:hover {
 
  .all-contact-links:hover {
      background-color: #deecee;
-     color: #161A42;
+     color: #161A42 !important;
      border: 2px solid #161A42;
  }
 
@@ -671,22 +494,6 @@ nav ul li a:hover {
      position: relative;
      bottom: 0;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  /* Responsive Design */
