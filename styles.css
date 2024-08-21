@@ -593,13 +593,6 @@
     }
     }
 
-     /* #basitLogo {
-         width: 172px;
-         height: 158px;
-         position: relative;
-         bottom: 17px;
-         right: 2px;
-     } */
 
      #article-heading {
          margin-top: 10px;
@@ -617,8 +610,6 @@
 
 
 
- }
-
  @media (max-width: 480px) {
 
      html,
@@ -627,13 +618,7 @@
          overflow-x: hidden;
      }
 
-     /* header h1 {
-         font-size: 1.8em;
-     } */
-
-     /* header {
-         height: 127px;
-     } */
+  
 
      article h3 {
          font-size: 1.25em;
@@ -643,24 +628,11 @@
          font-size: 1.25em;
      }
 
-     /* .hamburger-menu {
-         max-width: 100%;
-         overflow-x: hidden;
-     } */
 
      article {
          display: block;
      }
 
-     /* #basitLogo {
-         width: 152px;
-         height: 148px;
-         padding: 0px;
-         margin: 0px;
-         position: relative;
-         bottom: 7px;
-         right: 16px;
-     } */
 
      #center-article {}
 
@@ -715,18 +687,6 @@
         left: 10px;
     }
 
-     /* 
-     #ul-div {
-         display: flex;
-         margin-right: 0px;
-         width: 100%;
-         justify-content: space-evenly;
-     }
-
-     #cont-head {
-         height: 125px;
-     } */
-
  }
 
 
@@ -741,6 +701,7 @@
      #contact-link-container {
          display: flex;
          justify-content: center;
+         flex-wrap: wrap;
          width: 100%;
          gap: 12px;
      }
