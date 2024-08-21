@@ -611,12 +611,12 @@
 
 
  @media (max-width: 480px) {
-
+/* 
      html,
      body {
          max-width: 100%;
          overflow-x: hidden;
-     }
+     } */
 
   
 
@@ -692,16 +692,16 @@
 
  @media (max-width: 320px) {
 
-     html,
+     /* html,
      body {
          max-width: 100%;
          overflow-x: hidden;
-     }
+     } */
 
      #contact-link-container {
          display: flex;
          justify-content: center;
-         flex-wrap: wrap;
+         /* flex-wrap: wrap; */
          width: 100%;
          gap: 12px;
      }
