@@ -1,33 +1,332 @@
- 
- 
  /* Reset some default browser styles */
-body,
-h1,
-h2,
-h3,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
+ body,
+ h1,
+ h2,
+ h3,
+ p,
+ ul {
+     margin: 0;
+     padding: 0;
+ }
 
-
-
-/* Basic styles */
+ html,
  body {
-    font-family: Arial, sans-serif;
-    color: #333; 
-    background-color: #f4f4f4;
-    line-height: 1.6;
-}
+     max-width: 100%;
+     overflow-x: hidden;
+ }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
 
-#container {
+ /* Basic styles */
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #333;
+     background-color: #f4f4f4;
+     line-height: 1.6;
+ }
+
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ /* Nav Bar Styles */
+
+
+
+
+
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     background: #012540;
+     /* color: #fff; */
+ }
+
+ header {
+     background: #161A42;
+ }
+
+ #basitLogo {
+     width: 164px;
+     height: 156px;
+     position: relative;
+     bottom: 13px;
+     right: 30px;
+ }
+
+ nav {
+     /* display: flex; */
+     /* height: 125px; */
+     /* width: 100%; */
+     /* align-items: center; */
+     /* justify-content: space-between; */
+     /* padding: 0px 50px 0 70px; */
+     /* flex-wrap: wrap; */
+     width: 90%;
+     margin: 0 auto;
+     max-width: 1200px;
+     display: flex;
+     justify-content: space-between;
+     height: 125px;
+ }
+
+ nav .logo {
+     /* color: #fff;
+     font-size: 35px;
+     font-weight: 600; */
+ }
+
+ nav ul {
+     display: flex;
+     /* flex-wrap: wrap; */
+     list-style: none;
+     /* width: 435px; */
+     /* position: relative; */
+     top: 48px;
+     margin: 35px 0px;
+     gap: 1.6rem;
+     /* font-size: 1.2rem; */
+ }
+
+ nav ul li {
+     margin: 0 5px;
+     /* display: block; */
+     padding: .5rem 1rem;
+     /* color: #0d6efd; */
+     /* text-decoration: none; */
+     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+ }
+
+ nav ul li a {
+     padding: 8px 15px;
+     letter-spacing: 1px;
+     transition: all 0.3s ease;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 25px;
+     color: white;
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+     transition: color 0.3s ease;
+     font-size: 25px;
+ }
+
+
+ nav ul li a:hover {
+     color: #b2d3d8;
+ }
+
+ nav .menu-btn i {
+     color: #fff;
+     font-size: 22px;
+     cursor: pointer;
+     display: none;
+ }
+
+ input[type="checkbox"] {
+     display: none;
+ }
+
+ @media (max-width: 1000px) {
+     nav {
+         padding: 0 40px 0 50px;
+     }
+ }
+
+ @media (max-width: 920px) {
+     nav .menu-btn i {
+         display: block;
+         position: relative;
+         top: 40px;
+     }
+
+     #click:checked~.menu-btn i:before {
+         content: "\f00d";
+     }
+
+     nav ul {
+         position: fixed;
+         top: 80px;
+         left: -100%;
+         background: #111;
+         height: 100vh;
+         width: 100%;
+         text-align: center;
+         display: block;
+         transition: all 0.3s ease;
+     }
+
+     #click:checked~ul {
+         left: 0;
+     }
+
+     nav ul li {
+         width: 100%;
+         margin: 40px 0;
+     }
+
+     nav ul li a {
+         width: 100%;
+         margin-left: -100%;
+         display: block;
+         font-size: 20px;
+         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     }
+
+     #click:checked~ul li a {
+         margin-left: 0px;
+     }
+
+     nav ul li a.active,
+     nav ul li a:hover {
+         background: none;
+         color: cyan;
+     }
+ }
+
+ @media (max-width: 768px) {
+     nav {
+         padding: 0px;
+     }
+
+
+     div ul {
+         text-align: center;
+     }
+
+     header {
+         /* background: #161A42; */
+         /* color: #fff; */
+         /* height: 138px; */
+     }
+
+     div ul li {
+         display: block;
+         margin: 10px 0;
+     }
+
+     nav .menu-btn i {
+         position: relative;
+         top: 50px;
+         font-size: 33px;
+         right: 35px;
+     }
+
+     .container {
+         width: 95%;
+     }
+
+     #container {
+         width: 95%;
+         display: flex;
+         flex-direction: row;
+     }
+
+     #basitLogo {
+         /* width: 172px; */
+         /* height: 158px; */
+         position: relative;
+         bottom: 6px;
+         right: 10px;
+     }
+
+     #ul-div {
+         display: flex;
+         justify-content: space-between;
+         width: 421px;
+         margin-right: 20px;
+     }
+
+
+     #cont-head {
+         height: 125px;
+     }
+
+ }
+
+ @media (max-width: 425px) {
+
+     header {
+         height: 115px !important;
+     }
+
+     #basitLogo {
+         position: relative !important;
+         bottom: 9px !important;
+         right: 10px !important;
+         width: 142px !important;
+         height: 139px !important;
+     }
+
+     nav .menu-btn i {
+         position: relative !important;
+         top: 40px !important;
+         font-size: 35px !important;
+         right: 36px !important;
+     }
+
+ }
+
+ @media (max-width: 425px) {
+
+     #basitLogo {
+         width: 152px;
+         height: 148px;
+         padding: 0px;
+         margin: 0px;
+         position: relative;
+         bottom: 7px;
+         right: 16px;
+     }
+
+     header {
+         height: 130px;
+     }
+
+ }
+
+ @media (max-width: 375px) {
+
+     nav .menu-btn i {
+         position: relative !important;
+         right: 15px !important;
+     }
+
+ }
+
+ @media (max-width: 320px) {
+
+     header {
+         height: 105px !important;
+     }
+
+     #basitLogo {
+         width: 130px !important;
+         height: 127px !important;
+     }
+
+     nav .menu-btn i {
+         font-size: 30px !important;
+         position: relative !important;
+         top: 36px !important;
+     }
+
+
+ }
+
+
+
+
+ /* #container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
@@ -35,23 +334,6 @@ ul {
     justify-content: space-between;
     
 } 
-
-h1{
-    color: #161A42;;
-}
-
-#header-Btn{
-
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 ul {
     list-style: none;
@@ -100,7 +382,7 @@ header {
 }
 
 .hamburger-menu {
-     display: none; /*Hidden by default for larger screens */
+     display: none; 
     cursor: pointer;
 }
 
@@ -128,7 +410,24 @@ nav ul li a:hover {
     color: #b2d3d8;
 } 
 
+#ul-div {
+    margin: 35px 0px;
+}
+
+#cont-head {
+    height: 120px;
+}
+
+
 @media (max-width: 700px) {
+
+    html,
+    body {
+            max-width: 100%;
+            overflow-x: hidden;
+    }
+
+
     .nav-container .logo {
         font-size: 1.2rem;
         z-index: 2;
@@ -174,422 +473,463 @@ nav ul li a:hover {
         right: 0;
     }
 
-}
+} */
 
 
 
-/* Main section styles */
-main {
-    padding: 20px 0;
-    background: #deecee;
-}
+ /* Main section styles */
+ main {
+     padding: 20px 0;
+     background: #deecee;
+ }
 
-section {
-    padding: 20px;
-    background: #b2d3d8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
+ h1 {
+     color: #161A42;
+     ;
+ }
 
-h2 {
-    border-bottom: 3px solid #161A42;;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #161A42;;
-}
+ section {
+     padding: 20px;
+     background: #b2d3d8;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+ }
 
+ h2 {
+     border-bottom: 3px solid #161A42;
+     ;
+     padding-bottom: 10px;
+     margin-bottom: 20px;
+     font-size: 2em;
+     color: #161A42;
+     ;
+ }
 
+ .container {
+     width: 90%;
+     margin: 0 auto;
+     max-width: 1200px;
+ }
 
-/* Article styles */
-article {
-    display: flex;
-    flex-direction: row-reverse;
-}
+ /* Article styles */
+ article {
+     display: flex;
+     flex-direction: row-reverse;
+ }
 
-.article-img {
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
-}
+ .article-img {
+     width: 500px;
+     height: 300px;
+     border-radius: 8px;
+ }
 
-.readBtn{
-    background-color: #161A42;
-    border-color: black;
-    width: 108px;
-    height: 37px;
-    border: 1px thin;
-    border-radius: 8px;
-    -webkit-box-shadow: inset 0px 0px 40px -32px #161A42;
-    -moz-box-shadow: inset 0px 0px 40px -32px #161A42;
-    box-shadow: inset 0px 0px 40px -32px #161A42;
-    border-width: 1px;
-}
+ .readBtn {
+     background-color: #161A42;
+     border-color: black;
+     width: 108px;
+     height: 37px;
+     border: 1px thin;
+     border-radius: 8px;
+     -webkit-box-shadow: inset 0px 0px 40px -32px #161A42;
+     -moz-box-shadow: inset 0px 0px 40px -32px #161A42;
+     box-shadow: inset 0px 0px 40px -32px #161A42;
+     border-width: 1px;
+ }
 
-.center-btn{
-    margin-left: 65px;
-}
+ .center-btn {
+     margin-left: 65px;
+ }
 
-.article-heading {
-    margin-top: 10px;
-    font-size: 1.75em;
-    margin-right: 65px;
-}
+ .article-heading {
+     margin-top: 10px;
+     font-size: 1.75em;
+     margin-right: 65px;
+ }
 
-.article-para {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-right: 65px;
-}
+ .article-para {
+     font-size: 1.1em;
+     line-height: 1.6;
+     margin-right: 65px;
+ }
 
-.article-readMore {
-    color: #161A42;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: color 0.3s ease;
-    color: #b2d3d8;
-}
-
-
-
-#center-article {
-    flex-direction: row;
-}
-
-#article-img {
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
-}
-
-#article-heading {
-    margin-top: 10px;
-    font-size: 1.75em;
-    margin-left: 65px;
-}
-
-#article-para {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-left: 65px;
-}
-
-#article-readMore {
-    color: #161A42;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-    transition: color 0.3s ease;
-    color: #b2d3d8;
-}
+ .article-readMore {
+     color: #161A42;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     transition: color 0.3s ease;
+     color: #b2d3d8;
+ }
 
 
-#ul-div {
-    margin: 35px 0px;
-}
 
-#cont-head {
-    height: 120px;
-}
+ #center-article {
+     flex-direction: row;
+ }
 
-.readBtn:hover {
-    background-color:#b2d3d8;
-    color: #161A42;
-    border-color: #161A42;
-}
+ #article-img {
+     width: 500px;
+     height: 300px;
+     border-radius: 8px;
+ }
+
+ #article-heading {
+     margin-top: 10px;
+     font-size: 1.75em;
+     margin-left: 65px;
+ }
+
+ #article-para {
+     font-size: 1.1em;
+     line-height: 1.6;
+     margin-left: 65px;
+ }
+
+ #article-readMore {
+     color: #161A42;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     margin-top: 10px;
+     transition: color 0.3s ease;
+     color: #b2d3d8;
+ }
+
+
+
+ .readBtn:hover {
+     background-color: #b2d3d8;
+     color: #161A42;
+     border-color: #161A42;
+ }
 
  #article-readMore:hover {
-    background-color:#b2d3d8;
-    color: #161A42;
-    border-color: #161A42;
-}
-
-#about-para{
- text-align: center;   
-} 
-
-
-
-/* About section styles */
-.profile-img {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid #161A42;
-}
-
-#contact-link-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 40px;
-}
-
-.all-contact-links{
-    border-radius: 50%;
-    background-color: #161A42;
-    width: 51px;
-    height: 51px;
-    border: 2px solid #161A42;
-    color: #deecee;
-    border-color: black;
-}
-
-.all-contact-links a{
-    position: relative;
-    top: 8px;
-    left: 11px;
-}
-
-.app-link:hover{
- color: #161A42;
-}
-
-.all-contact-links:hover{
-    background-color:  #deecee ;
-    color: #161A42;
-    border: 2px solid #161A42;
-}
-
-
-
-/* Footer styles */
-footer {
-    background: #161A42;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    div ul {
-        text-align: center;
-    }
-
-    header {
-        background: #161A42;;
-        color: #fff;
-        height: 138px;
-    }
-
-    div ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    #container {
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    article h3 {
-        font-size: 1.5em;
-    }
-
-    article {}
-
-
-    .article-img {
-        width: 330px;
-        height: 210px;
-        border-radius: 8px;
-        margin-top: 40px;
-    }
-
-    .article-heading {
-        margin-right: 34px;
-    }
-
-    .article-para {
-        margin-right: 28px;
-    }
-
-    .article-readMore {}
-
-    #center-article{
-        flex-direction: row;
-    }
-
-    #article-img {
-        width: 330px;
-        height: 210px;
-        border-radius: 8px;
-        margin-top: 40px;
-    }
-
-    #basitLogo{
-        width: 172px;
-        height: 158px;
-        position: relative;
-        bottom: 17px;
-        right: 2px;
-    }
-
-    #article-heading {
-        margin-top: 10px;
-        font-size: 1.75em;
-        margin-left: 28px;
-    }
-
-    #article-para {
-        margin-left: 28px;
-    }
-
-    .center-btn {
-        margin-left: 28px;
-    }
-
-    #ul-div {
-        display: flex;
-        justify-content: space-between;
-        width: 421px;
-        margin-right: 20px;
-    }
-
-
-    #cont-head {
-        height: 125px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header {
-        height: 127px;
-    }
-
-    article h3 {
-        font-size: 1.25em;
-    }
-
-    h2 {
-        font-size: 1.25em;
-    }
-
-    article {
-        display: block;
-    }
-
-    #basitLogo{
-        width: 152px;
-        height: 148px;
-        padding: 0px;
-        margin: 0px;
-        position: relative;
-        bottom: 7px;
-        left: 16px;
-    }
-
-    #center-article{
-
-    }
-
-    .article-img {
-        width: 100%;
-        height: 270px;
-    }
-
-    .article-heading {
-        margin: 0px;
-    }
-
-    .article-para {
-        margin: 0px;
-    }
-
-    .article-readMore {}
-
-    #article-img {
-        width: 100%;
-        height: 270px;
-    }
-
-    #cont-head {
-        height: 118px;
-    }
-    
-
-    #article-heading {
-        margin: 0px;
-    }
-
-    #article-para {
-        margin: 0px;
-    }
-
-
-    #container {
-        display: flex;
-        justify-content: space-between;
-        margin: 0px;
-    }
-   
-
-    #article-readMore {
-        margin-left: 0px;
-    }
-
-    #ul-div {
-        display: flex;
-        margin-right: 0px;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    #cont-head {
-        height: 125px;
-    }
-
-}
-
-
-@media (max-width: 320px) {
-
-    #contact-link-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 12px;
-    }
-    
-   
-
-}
-
-
-@media (max-width: 375px) {
-
-    #contact-link-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 9px;
-    }
-    
-   
-
-}
+     background-color: #b2d3d8;
+     color: #161A42;
+     border-color: #161A42;
+ }
+
+ #about-para {
+     text-align: center;
+ }
+
+
+
+ /* About section styles */
+ .profile-img {
+     border-radius: 50%;
+     display: block;
+     margin: 0 auto 20px;
+     width: 150px;
+     height: 150px;
+     object-fit: cover;
+     border: 2px solid #161A42;
+ }
+
+ #contact-link-container {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     gap: 40px;
+ }
+
+ .all-contact-links {
+     border-radius: 50%;
+     background-color: #161A42;
+     width: 51px;
+     height: 51px;
+     border: 2px solid #161A42;
+     color: #deecee;
+     border-color: black;
+ }
+
+ .all-contact-links a {
+     position: relative;
+     top: 8px;
+     left: 11px;
+ }
+
+ .app-link:hover {
+     color: #161A42;
+ }
+
+ .all-contact-links:hover {
+     background-color: #deecee;
+     color: #161A42;
+     border: 2px solid #161A42;
+ }
+
+
+
+ /* Footer styles */
+ footer {
+     background: #161A42;
+     color: #fff;
+     text-align: center;
+     padding: 10px 0;
+     position: relative;
+     bottom: 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+
+     html,
+     body {
+         max-width: 100%;
+         overflow-x: hidden;
+     }
+
+     div ul {
+         text-align: center;
+     }
+
+     header {
+         background: #161A42;
+         ;
+         color: #fff;
+         height: 138px;
+     }
+
+     div ul li {
+         display: block;
+         margin: 10px 0;
+     }
+
+     .container {
+         width: 95%;
+     }
+
+     #container {
+         width: 95%;
+         display: flex;
+         flex-direction: row;
+     }
+
+     h2 {
+         font-size: 1.5em;
+     }
+
+     article h3 {
+         font-size: 1.5em;
+     }
+
+     article {}
+
+
+     .article-img {
+         width: 330px;
+         height: 210px;
+         border-radius: 8px;
+         margin-top: 40px;
+     }
+
+     .article-heading {
+         margin-right: 34px;
+     }
+
+     .article-para {
+         margin-right: 28px;
+     }
+
+     .article-readMore {}
+
+     #center-article {
+         flex-direction: row;
+     }
+
+     #article-img {
+         width: 330px;
+         height: 210px;
+         border-radius: 8px;
+         margin-top: 40px;
+     }
+
+     /* #basitLogo {
+         width: 172px;
+         height: 158px;
+         position: relative;
+         bottom: 17px;
+         right: 2px;
+     } */
+
+     #article-heading {
+         margin-top: 10px;
+         font-size: 1.75em;
+         margin-left: 28px;
+     }
+
+     #article-para {
+         margin-left: 28px;
+     }
+
+     .center-btn {
+         margin-left: 28px;
+     }
+
+
+
+ }
+
+ @media (max-width: 480px) {
+
+     html,
+     body {
+         max-width: 100%;
+         overflow-x: hidden;
+     }
+
+     /* header h1 {
+         font-size: 1.8em;
+     } */
+
+     /* header {
+         height: 127px;
+     } */
+
+     article h3 {
+         font-size: 1.25em;
+     }
+
+     h2 {
+         font-size: 1.25em;
+     }
+
+     /* .hamburger-menu {
+         max-width: 100%;
+         overflow-x: hidden;
+     } */
+
+     article {
+         display: block;
+     }
+
+     /* #basitLogo {
+         width: 152px;
+         height: 148px;
+         padding: 0px;
+         margin: 0px;
+         position: relative;
+         bottom: 7px;
+         right: 16px;
+     } */
+
+     #center-article {}
+
+     .article-img {
+         width: 100%;
+         height: 270px;
+     }
+
+     .article-heading {
+         margin: 0px;
+     }
+
+     .article-para {
+         margin: 0px;
+     }
+
+     .article-readMore {}
+
+     #article-img {
+         width: 100%;
+         height: 270px;
+     }
+
+     #cont-head {
+         height: 118px;
+     }
+
+
+     #article-heading {
+         margin: 0px;
+     }
+
+     #article-para {
+         margin: 0px;
+     }
+
+
+     #container {
+         display: flex;
+         justify-content: space-between;
+         margin: 0px;
+     }
+
+
+     #article-readMore {
+         margin-left: 0px;
+     }
+
+     /* 
+     #ul-div {
+         display: flex;
+         margin-right: 0px;
+         width: 100%;
+         justify-content: space-evenly;
+     }
+
+     #cont-head {
+         height: 125px;
+     } */
+
+ }
+
+
+ @media (max-width: 320px) {
+
+     html,
+     body {
+         max-width: 100%;
+         overflow-x: hidden;
+     }
+
+     #contact-link-container {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         gap: 12px;
+     }
+
+
+
+ }
+
+
+ @media (max-width: 375px) {
+
+     html,
+     body {
+         max-width: 100%;
+         overflow-x: hidden;
+     }
+
+     #contact-link-container {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         gap: 9px;
+     }
+
+
+
+
+ }
